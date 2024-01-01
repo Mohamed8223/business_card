@@ -1,0 +1,314 @@
+{
+    "@@locale": "ar",
+    "CategoriesManageView_successMessage": "تمت العملية بنجاح",
+    "CategoriesManageView_errorMessage": "حدث خطأ. يرجى المحاولة مرة أخرى.",
+    "CategoriesManageView_emptyCategoriesList": "قائمة الفئات فارغة!",
+    "CategoriesManageView_addButton": "إضافة",
+    "CategoriesManageView_categoriesTitle": "الفئات",
+    "CitiesManageView_successMessage": "تمت العملية بنجاح",
+    "CitiesManageView_emptyCitiesList": "قائمة المدن فارغة!",
+    "CitiesManageView_addButton": "إضافة",
+    "CitiesManageView_citiesTitle": "المدن",
+    "DoctorsManageView_emptyDoctorsList": "لا يوجد أطباء",
+    "DoctorsManageView_ask_to_delete": "هل أنت متأكد أنك تريد حذف معلومات الطبيب الخاصة بك؟",
+    "DoctorsManageView_yes": "نعم",
+    "DoctorsManageView_no": "إلغاء",
+    "DoctorsManageView_doctorsTitle": "الأطباء",
+    "AdminManageView_appBarTitle": "الإدارة",
+    "AdminManageView_citiesText": "المدن",
+    "AdminManageView_categoriesText": "الفئات",
+    "AdminManageView_doctorsText": "الأطباء",
+    "AdminManageView_postText": "المشاركات",
+    "CategoryAddDialog_addCategoryTitle": "إضافة فئة رئيسية",
+    "CategoryAddDialog_addSubcategoryTitle": "إضافة فئة فرعية",
+    "CategoryAddDialog_editCategoryTitle": "تحرير الفئة",
+    "CategoryAddDialog_editSubcategoryTitle": "تحرير الفئة الفرعية",
+    "CategoryAddDialog_serviceText": "الخدمة",
+    "CategoryAddDialog_addSubCategoryText": "التخصص",
+    "CategoryAddDialog_imageText": "الصورة",
+    "CategoryAddDialog_visibleText": "مرئي",
+    "CategoryAddDialog_nameHintText": "الاسم",
+    "CategoryAddDialog_saveButtonText": "حفظ",
+    "CategoryAddDialog_pleaseAddImageText": "الرجاء إضافة صورة",
+    "CityAddEditDialog_editCityTitle": "تحرير المدينة",
+    "CityAddEditDialog_addCityTitle": "إضافة مدينة",
+    "CityAddEditDialog_cityNameHintText": "اسم المدينة",
+    "CityAddEditDialog_coordinatesHintText": "إحداثيات الموقع على الخريطة",
+    "CityAddEditDialog_visibleText": "مرئي",
+    "CityAddEditDialog_saveButtonText": "حفظ",
+    "MainCategoryType_specialist": "التخصص",
+    "LoginView_verify_message": "تم إرسال الرمز بنجاح",
+    "LoginView_verify_login_message": "تم تسجيل الدخول",
+    "LoginView_or": "أو",
+    "LoginView_register_ask": "ليس لديك حساب؟",
+    "LoginView_sighup": "التسجيل",
+    "LoginView_login": "تسجيل الدخول",
+    "LoginView_new_account_ask": "إنشاء حساب جديد",
+    "AccountTypeView_welcome_message": "مرحبًا بك في التطبيق",
+    "AccountTypeView_get_started": "ابدأ بإنشاء حساب",
+    "AccountTypeView_choose_account_type": "اختر نوع حسابك لاستكمال عملية التسجيل",
+    "AccountTypeView_next": "التالي",
+    "AccountTypeView_already_have_account": "هل لديك حساب بالفعل؟",
+    "AccountTypeView_login_button": "تسجيل الدخول",
+    "ChangePasswordView_appBarTitle": "تغيير كلمة المرور",
+    "ChangePasswordView_oldPasswordHint": "كلمة المرور القديمة",
+    "ChangePasswordView_newPasswordHint": "كلمة المرور الجديدة",
+    "ChangePasswordView_confirmPasswordHint": "تأكيد كلمة المرور",
+    "ChangePasswordView_confirmButtonLabel": "تأكيد",
+    "ForgetPasswordView_title": "نسيت كلمة المرور؟",
+    "ForgetPasswordView_resetPasswordText": "الرجاء إعادة تعيين كلمة المرور باستخدام رقم هاتفك المحمول",
+    "ForgetPasswordView_mobileNumberHint": "رقم الجوال",
+    "ForgetPasswordView_sendCodeButton": "إرسال الرمز",
+    "otp_title": "تحقق من رقم هاتفك المحمول",
+    "otp_verificationMessage": "لقد قمنا بإرسال رسالة نصية تحتوي على رمز التحقق",
+    "otp_confirmCodeButton": "تأكيد الرمز",
+    "otp_resendMessage": "لم تتلق رسالة؟",
+    "otp_resendButton": "إعادة الإرسال",
+    "ResetPasswordView_title": "كلمة المرور الجديدة",
+    "ResetPasswordView_passwordHint": "كلمة المرور",
+    "ResetPasswordView_confirmPasswordHint": "تأكيد كلمة المرور",
+    "ResetPasswordView_confirmButtonLabel": "تأكيد",
+    "UserSignUpView_codeMessage": "تم إرسال الرمز بنجاح",
+    "UserSignUpView_createAccountTitle": "إنشاء حساب جديد",
+    "UserSignUpView_userTypeDoctor": "طبيب",
+    "UserSignUpView_userTypeUser": "مستخدم",
+    "UserSignUpView_nextButtonLabel": "التالي",
+    "UserSignUpView_orText": "أو",
+    "AccountTypeSelector_user": "مستخدم",
+    "AccountTypeSelector_doctor": "طبيب",
+    "AccountTypeSelector_next": "التالي",
+    "ChatView_noMessagesText": "لا توجد رسائل",
+    "ChatsListView_appBarTitle": "المحادثات",
+    "ChatsListView_noChatsText": "لا توجد محادثات",
+    "ChatsListView_searchPlaceholder": "البحث في المحادثات",
+    "ChatAttatchmentPreview_appBarTitle": "معاينة",
+    "ChatAttatchmentPreview_imagePreview": "صورة",
+    "ChatAttatchmentPreview_pdfIconText": "ملف PDF",
+    "ChatAttatchmentPreview_confirmButton": "إرسال",
+    "ChatInputField_textFieldHint": "اكتب رسالة",
+    "ChatInputField_attachmentSizeExceeded": "حجم الملف يتجاوز 2 ميجابايت",
+    "ChatInputField_attachFileButton": "إرفاق ملف",
+    "ChatInputField_sendButton": "إرسال",
+    "ChatItemCard_lastMessageImage": "📷 صورة",
+    "ChatItemCard_lastMessagePDF": "📑 ملف PDF",
+    "AddConsultationView_message": "تم الإرسال بنجاح",
+    "AddConsultationView_consult": "الاستشارات",
+    "AddConsultationView_title": "تحدث إلى الطبيب الآن",
+    "AddConsultationView_description": "قدم استفسارك أو استفسارك للطبيب حتى يتمكنوا من الاتصال بك الآن",
+    "AddConsultationView_shortDescription": "استفسارك بإيجاز",
+    "AddConsultationView_placeholder": "اسم المدينة",
+    "AddConsultationView_coordinatesPlaceholder": "إحداثيات على الخريطة",
+    "AddConsultationView_visibleText": "مرئي",
+    "AddConsultationView_saveButtonText": "حفظ",
+    "AddConsultationView_addImageButtonText": "إضافة ملف",
+    "AddConsultationView_supportedFormatsText": "الصيغ المدعومة: PNG، PDF، JPG",
+    "AddConsultationView_sendButtonText": "إرسال",
+    "ConsultationView_title": "جميع الاستشارات",
+    "ConsultationView_noActiveConsultations": "لا توجد استشارات نشطة متاحة",
+    "ConsultationCard_consultationTitle": "الاستشارة: ",
+    "ConsultationCard_attachmentLabel": "الملف المرفق: ",
+    "ConsultationCard_patientLabel": "المريض:",
+    "ConsultationCard_doctorLabel": "الطبيب:",
+    "ConsultationCard_awaitingTransfer": "بانتظار التحويل",
+    "DeleteUserAccount_delete_account": "حذف الحساب",
+    "DeleteUserAccount_consequences": "ماذا يحدث إذا قمت بحذف حساب Clinicate الخاص بك نهائيًا؟",
+    "DeleteUserAccount_consequences_description": "سيتم حذف ملفك الشخصي والصور والمشاركات ومقاطع الفيديو وكل ما أضفته بشكل دائم.",
+    "DeleteUserAccount_youCant_add": "لن تتمكن من استعادة أي شيء قمت بإضافته.",
+    "DeleteUserAccount_youCant_see": "لن تتمكن بعد الآن من رؤية استشاراتك السابقة.",
+    "DeleteUserAccount_youCan_see_message": "قد تحتفظ ببعض المعلومات، مثل الرسائل التي أرسلتها إلى الأطباء، بحيث يمكن للأطباء رؤيتها بعد حذف حسابك. نسخ من الرسائل التي أرسلتها مخزنة في صناديق البريد الوارد لديهم.",
+    "DeleteUserAccount_delete_account_process": "عملية حذف الحساب:",
+    "DeleteUserAccount_delete_account_message": "هل أنت متأكد أنك تريد حذف حسابك نهائيًا؟ سيؤدي هذا إلى فقدان الوصول الدائم إلى جميع المعلومات والبيانات المخزنة في حسابك الحالي ولا يمكن استعادتها مرة أخرى.",
+    "DeleteUserAccount_delete_account_cancelation": "إلغاء",
+    "DoctorsListSelector_doctorsTitle": "الأطباء",
+    "DoctorsListSelector_confirmButton": "تأكيد",
+    "ClicnkInfoView_Clinic_Information": "معلومات العيادة",
+    "ClicnkInfoView_Clinic_type": "نوع العيادة",
+    "ClicnkInfoView_Add_Clinic": "إضافة عيادة",
+    "ClicnkInfoView_Save": "حفظ",
+    "ClicnkInfoView_Clinic_Name": "اسم العيادة",
+    "ClicnkInfoView_Location_Coordinates_on_Map": "إحداثيات الموقع على الخريطة",
+    "ClicnkInfoView_Add": "إضافة",
+    "DoctorAgreementsView_Agreements": "الاتفاقيات",
+    "DoctorAgreementsView_Clalit": "كلاليت",
+    "DoctorAgreementsView_Meuhedit": "مؤوحدت",
+    "DoctorAgreementsView_Leumit": "لؤوميت",
+    "DoctorAgreementsView_Maccabi": "مكابي",
+    "DoctorAgreementsView_No_agreements_available_for_this_type": "لا تتوفر اتفاقيات لهذا النوع.",
+    "DoctorAgreementsView_Continue": "متابعة",
+    "DoctorAgreementsWithInsuranceView_Agreements_Migdal": "مغدال",
+    "DoctorAgreementsWithInsuranceView_Agreements_Phoenix": "فينيكس",
+    "DoctorAgreementsWithInsuranceView_Agreements_Harel": "هرئيل",
+    "DoctorAgreementsWithInsuranceView_Agreements_Menora": "منورا",
+    "DoctorAgreementsWithInsuranceView_Agreements_Clal": "كلال",
+    "DoctorAgreementsWithInsuranceView_Agreements_Dikla": "دكلاه",
+    "DoctorAgreementsWithInsuranceView_Agreements_Ayalon": "ايلون",
+    "DoctorAgreementsWithInsuranceView_Agreements_IDI_Insurance": "بيطواح يشير",
+    "DoctorAgreementsWithInsuranceView_Agreements_Ilanot": "ايلانوت",
+    "DoctorAgreementsWithInsuranceView_Agreements_Eliahu": "الياهو",
+    "DoctorAgreementsWithInsuranceView_Agreements_Shirbit": "شيربيط",
+    "DoctorInfoStepper_Personal_Information": "المعلومات الشخصية",
+    "AddRate_ratings": "التقييمات",
+    "AddRate_show_all": "عرض الكل",
+    "AddRate_add_rate": "أضف تقييم",
+    "DoctorInfoStepper_Profession": "المهنة",
+    "DoctorInfoStepper_Services": "الخدمات",
+    "DoctorInfoStepper_Specializations": "التخصصات",
+    "DoctorInfoStepper_Agreements": "الاتفاقيات",
+    "DoctorInfoStepper_Insurance": "تأمين",
+    "DoctorInfoStepper_Clinic_Information": "معلومات العيادة",
+    "DoctorInfoStepper_Operation_completed_successfully": "تمت العملية بنجاح",
+    "DoctorJobView_Profession": "المهنة",
+    "DoctorJobView_Dentist": "طبيب الأسنان",
+    "DoctorJobView_Cosmetic_Surgeon": "طبيب تجميل",
+    "DoctorJobView_Cosmetic_Surgeon_and_Dentist": "طبيب تجميل أسنان",
+    "ClinicJobView_Cosmetic_Surgeon": "",
+    "ClinicJobView_Cosmetic_Surgeon_and_Dentist": "",
+    "ClinicJobView_Dentist": "",
+    "DoctorJobView_Continue": "متابعة",
+    "DoctorPersonalInfo_Personal_Information": "المعلومات الشخصية",
+    "DoctorPersonalInfo_Arabic_Name": "الاسم بالعربية",
+    "DoctorPersonalInfo_English_Name": "الاسم بالإنجليزية",
+    "DoctorPersonalInfo_Hebrew_Name": "الاسم بالعبرية",
+    "DoctorPersonalInfo_Email": "البريد الإلكتروني",
+    "DoctorPersonalInfo_Continue": "متابعة",
+    "DoctorServicesView_Services": "الخدمات",
+    "DoctorServicesView_Continue": "متابعة",
+    "DoctorSpecialistView_Specializations": "التخصصات",
+    "DoctorSpecialistView_I_am_not_a_specialist": "لست متخصصًا",
+    "DoctorSpecialistView_Continue": "متابعة",
+    "DoctorsListSelector_Doctors": "الأطباء",
+    "DoctorsListSelector_PreRegisterdDoctors": "الأطباء المسجلين مسبقًا",
+    "DoctorsListSelector_Confirm": "تأكيد",
+    "HomeView_appBarTitle": "مرحبا بك",
+    "NotificationsView_appBarTitle": "الإشعارات",
+    "NotificationsView_noNotificationsText": "ليس لديك إشعارات",
+    "NotificationsView_errorText": "حدث خطأ",
+    "NotificationsView_tryAgainText": "حاول مرة أخرى",
+    "NewPostView_appBarTitle": "منشور جديد",
+    "NewPostView_publishButtonText": "نشر",
+    "NewPostView_addDescriptionHint": "اكتب وصفًا توضيحيًا",
+    "NewPostView_loadImageButtonText": "تحميل صورة",
+    "NewPostView_loadImageFormatText": "الصيغ المدعومة: PNG، GIF، JPG. عادةً ما تكون الصور بحجم 400x300 أو 800x600.",
+    "NewPostView_loadImageMaxText": "لا يمكنك تحميل مزيد من الصور",
+    "NewPostView_loadImageSizeText": "يجب أن يكون حجم الصورة أقل من 10 ميجابايت",
+    "NewPostView_cancelImageTooltip": "إزالة الصورة",
+    "NewPostView_imageCountLimitText": "لا يمكنك إضافة أكثر من 3 صور",
+    "NewPostView_errorSnackbarText": "الرجاء إضافة البيانات",
+    "NewPostView_successSnackbarText": "نُشر بنجاح",
+    "NewPostView_uploadIconText": "تحميل الصورة",
+    "NewPostView_imageSizeExceedsLimitText": "يجب أن يكون حجم الصورة أقل من 10 ميجابايت",
+    "NewPostView_imageLimitExceededText": "لا يمكنك إضافة أكثر من 3 صور",
+    "CommentsWidget_commentsTitle": "التعليقات",
+    "CommentsWidget_noCommentsText": "لا توجد تعليقات متاحة",
+    "CommentsWidget_addCommentHint": "...أضف تعليقًا",
+    "CommentsWidget_sendButton": "إرسال",
+    "PostWidget_viewMore": "عرض المزيد",
+    "PostWidget_viewLess": "عرض أقل",
+    "PostWidget_showAllComments": "عرض جميع التعليقات",
+    "CurrentUserProfileView_profileTitle": "الملف الشخصي",
+    "CurrentUserProfileView_moreOptions": "خيارات أخرى",
+    "CurrentUserProfileView_editProfile": "تحرير الملف الشخصي",
+    "CurrentUserProfileView_followers": "المتابعون",
+    "CurrentUserProfileView_followings": "المتابعين",
+    "CurrentUserProfileView_about_me": "نبذة عني",
+    "CurrentUserProfileView_Specialties": "التخصصات",
+    "CurrentUserProfileView_Services": "الخدمات",
+    "CurrentUserProfileView_Agreements_with_health": "الاتفاقيات مع صناديق الصحة",
+    "CurrentUserProfileView_Agreements_with_insurance": "الاتفاقيات مع شركات التأمين",
+    "CurrentUserProfileView_Years_of_Experience": "سنوات الخبرة",
+    "FollowingsFollowersListView_Followers": "المتابعون",
+    "FollowingsFollowersListView_Following": "المتابعين",
+    "FollowingsFollowersListView_Unfollow": "إلغاء المتابعة",
+    "FollowingsFollowersListView_Follow": "متابعة",
+    "FollowingsFollowersListView_You": "أنت",
+    "OtherUserProfileView_Profile": "الملف الشخصي",
+    "OtherUserProfileView_Followers": "المتابعون",
+    "OtherUserProfileView_Following": "المتابعين",
+    "OtherUserProfileView_Follow": "متابعة",
+    "OtherUserProfileView_Unfollow": "إلغاء المتابعة",
+    "OtherUserProfileView_Message": "الرسائل",
+    "OtherUserProfileView_user_contacts": "معلومات التواصل مع الطبيب",
+    "UpdateProfileView_Complete_Profile": "اكمل الملف",
+    "UpdateProfileView_Edit_Profile": "تحرير الملف الشخصي",
+    "UpdateProfileView_Updated_message": "تم تحديث البيانات بنجاح",
+    "UpdateProfileView_Name": "الاسم",
+    "UpdateProfileView_Email": "البريد الإلكتروني",
+    "UpdateProfileView_chose_city": "الرجاء اختيار مدينة",
+    "UpdateProfileView_Clinic Name": "اسم العيادة",
+    "UpdateProfileView_Save": "حفظ",
+    "AccountTypeRadioSelector_Account_Type": "نوع الحساب",
+    "AccountTypeRadioSelector_User": "مستخدم",
+    "AccountTypeRadioSelector_Doctor": "طبيب",
+    "CategorySection_Select_Main_Category": "حدد القسم الرئيسية",
+    "CategorySection_First_select_a_main_category": "أولاً، حدد القسم الرئيسية",
+    "SelectCategorySection_Specialization": "حدد التخصص",
+    "CityDropDown_your_city": "المدينة",
+    "GenderSelector_gender": "الجنس",
+    "GenderSelector_female": "أنثى",
+    "GenderSelector_male": "ذكر",
+    "ProfileBottomSheet_delete_Account": "حذف الحساب",
+    "ProfileBottomSheet_My_Consultations": "استشاراتي",
+    "ProfileBottomSheet_Share_the_App": "مشاركة التطبيق",
+    "ProfileBottomSheet_Privacy_Policy": "سياسة الخصوصية",
+    "ProfileBottomSheet_About_Us": "من نحن",
+    "ProfileBottomSheet_Logout": "تسجيل الخروج",
+    "CustomSearchResultsView_Search_Results": "نتائج البحث",
+    "CustomSearchResultsView_Posts": "منشورات",
+    "CustomSearchResultsView_Doctors": "الأطباء",
+    "CustomSearchResultsView_No_matching_search_results": "لا توجد نتائج بحث مطابقة",
+    "CustomSearchView_Custom_Search": "بحث مخصص",
+    "CustomSearchView_Search": "بحث",
+    "CategoriesChipsList_Specialisation": "تخصص",
+    "CategoriesChipsList_Your_Interests": "اهتماماتك",
+    "CitiesChipsList_Region": "المنطقة",
+    "SettingsView_Settings": "الإعدادات",
+    "SettingsView_Change_Password": "تغيير كلمة المرور",
+    "SettingsView_Change_Language": "تغيير اللغة",
+    "SettingsView_Delete_My_Account": "حذف حسابي",
+    "ContextExtensions_error_message": "حدث خطأ، حاول مرة أخرى",
+    "DateTimeExtensions_yesterday": "أمس",
+    "DateTimeExtensions_today": "اليوم",
+    "ValidationMixin_This_field_is_required": "هذا الحقل مطلوب",
+    "ValidationMixin_Invalid_email_address": "عنوان البريد الإلكتروني غير صالح",
+    "ValidationMixin_Password_must_be_at_least_6_characters_long": "يجب أن تتكون كلمة المرور من 6 أحرف على الأقل",
+    "ValidationMixin_Password_Confirm_must_be_at_least_6_characters": "يجب أن تتكون تأكيد كلمة المرور من 6 أحرف على الأقل",
+    "ValidationMixin_Password_must_be_less_than_18_characters": "يجب أن تكون كلمة المرور أقل من 18 حرفًا",
+    "ValidationMixin_Name_must_be_at_least_8_characters_long": "يجب أن يحتوي الاسم على 8 أحرف على الأقل",
+    "ValidationMixin_Name_must_not_exceed_20_characters": "يجب ألا يزيد الاسم عن 20 حرفًا",
+    "ValidationMixin_Name_must_be_at_least_4_characters_long": "يجب أن يحتوي الاسم على 4 أحرف على الأقل",
+    "ValidationMixin_the_PhoneNum_9": "يجب أن يتكون رقم الهاتف من 9 أرقام",
+    "ValidationMixin_Password_does_not_match": "كلمة المرور غير متطابقة",
+    "ValidationMixin_Invalid_location_data": "بيانات الموقع غير صالحة",
+    "AboutUsView_who_are_we": "من نحن",
+    "IntroductionView_Be_Well_We_Here": "كن بصحة جيدة\nنحن هنا",
+    "IntroductionView_Welcome_to_the_Community": "مرحبًا بك في المجتمع",
+    "IntroductionView_Join_Us": "انضم إلينا",
+    "PrivacyPolicyView_privacy_policy": "سياسة الخصوصية",
+    "SoonView_welcome_message": "شكرًا لك على ملء المعلومات الأولية. سنتصل بك في أقرب وقت ممكن بعد الموافقة للانضمام إلى تطبيقنا.",
+    "AttatechmentViewerView_View_file": "عرض الملف",
+    "ClinigramSearchTextField_search": "بحث",
+    "CustomErrorWidget_error_message": "حدث خطأ أثناء استرجاع البيانات",
+    "CustomErrorWidget_try_again": "حاول مرة أخرى",
+    "PhoneTextField_phone_num": "رقم الهاتف",
+    "VisibiltyToggle_Visible": "مرئي",
+    "VisibiltyToggle_Not_Visible": "غير مرئي",
+    "Select_language": "اختر اللغة",
+    "Language": "اللغة",
+    "Nearby_clinics": "العيادات القريبة",
+    "Consult_now": "إستشارة",
+    "Online": "اونلاين",
+    "nearbyClinics": "العيادات القريبة",
+    "Urgent": "عاجل",
+    "Agree": "موافق",
+    "And": "وايضا",
+    "AgreeToAdds": "أوافق على استقبال إعلانات",
+    "Terms_and_conditions": "الشروط والأحكام",
+    "Lets_start": "هيا نبدأ",
+    "I_own_clinic": "أملك عيادة",
+    "I_do_not_own_clinic": "لا أملك عيادة",
+    "Do_you_own_clinic": "هل تملك عيادة؟",
+    "Select_clinic_type_to_show_relevant_services": "حدد نوع العيادة لعرض الخدمات الملائمة",
+    "Select_clinic_type_to_show_relevant_specialities": "حدد نوع العيادة لعرض الخدمات الملائمة",
+    "This_page_is_for_doctors_only_Please_fill_in_your_professional_details_on_this_page": "هذه الصفحة للأطباء فقط. الرجاء ادخل تفاصيلك المهنية في هذه الصفحة.",
+    "Are_you_a_doctor": "هل أنت طبيب؟"
+}

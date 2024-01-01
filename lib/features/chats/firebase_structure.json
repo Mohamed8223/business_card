@@ -1,0 +1,47 @@
+{
+    "chats": {
+        // compare user ids which one is bigger to put first as chat-uid
+        "chat-uid": {
+            "lastMessage": {
+                "sender_id": "userid",
+                "content": "Hey Iron Man!",
+                "message_type": "",
+                "timestamp": 1491499435726
+            },
+            "members": [
+                {
+                    "id": "",
+                    "username": "",
+                    "fullnameAr": "",
+                    "fullnameEn": "",
+                    "fullnameHe": "",
+                    "fullnameRu": "",
+                    "imageUrl": ""
+                },
+                {
+                    "id": "",
+                    "username": "",
+                    "fullnameAr": "",
+                    "fullnameEn": "",
+                    "fullnameHe": "",
+                    "fullnameRu": "",
+                    "imageUrl": ""
+                }
+            ]
+        },
+        "messages": {
+            "message-uid-01": {
+                "sender_id": "userid",
+                "content": "Hey Iron Man!",
+                "message_type": "",
+                "timestamp": 1491499435726
+            },
+            "message-uid-02": {
+                "sender_id": "userid",
+                "content": "Hey Iron Man!",
+                "message_type": "",
+                "timestamp": 1491499435726
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "979454246456",
+    "project_id": "clinica-d38d2",
+    "storage_bucket": "clinica-d38d2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:979454246456:android:dfaee2c4fe92fc2a74f0cd",
+        "android_client_info": {
+          "package_name": "com.clinigram.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "979454246456-3fgl8qspllbkdacelmlk0ium243op2vf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.clinigram.app",
+            "certificate_hash": "d38e3d70d64ac1ee7b89b0c5983203dbbd305f7a"
+          }
+        },
+        {
+          "client_id": "979454246456-t5se999hpdfrv3hhl17p6sptcag22isi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpwQLznYCtk3OqZY05i6Z2VmYPD-5oni4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "979454246456-1niv8lr58jg1gg6bmv345tt981gor26k.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "979454246456-4j2asui9svk3c70n59lbfqnpfqn61n90.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.clinigramApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

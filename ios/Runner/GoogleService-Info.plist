@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>979454246456-4j2asui9svk3c70n59lbfqnpfqn61n90.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.979454246456-4j2asui9svk3c70n59lbfqnpfqn61n90</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDdYJggz6HQvAnLgI6a9_jdzYkuAbB5MR4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>979454246456</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.clinigramApp</string>
+	<key>PROJECT_ID</key>
+	<string>clinica-d38d2</string>
+	<key>STORAGE_BUCKET</key>
+	<string>clinica-d38d2.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:979454246456:ios:fc1ad3b2dfcd871174f0cd</string>
+</dict>
+</plist>
