@@ -6,6 +6,7 @@ import 'package:clinigram_app/features/clinics/data/models/clinic_model.dart';
 import 'package:clinigram_app/features/clinics/data/models/clinic_staff_model.dart';
 import 'package:clinigram_app/features/clinics/presentation/widgets/clinic_agreements_bar.dart';
 import 'package:clinigram_app/features/clinics/presentation/widgets/clinic_commands_bar.dart';
+import 'package:clinigram_app/features/clinics/presentation/widgets/clinic_ratingbar.dart';
 import 'package:clinigram_app/features/clinics/presentation/widgets/cover_image_picker.dart';
 import 'package:clinigram_app/features/doctors/presentation/views/information_register_screen.dart';
 import 'package:clinigram_app/features/doctors/providers/doctors_provider.dart';
@@ -16,6 +17,7 @@ import 'package:clinigram_app/features/profile/profile.dart';
 import 'package:clinigram_app/features/translation/provider/app_language_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:clinigram_app/features/translation/data/generated/l10n.dart';
+import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
@@ -66,6 +68,7 @@ String a='';
           height: 10,
         ),
         const ClinicCommandsBar(),
+        const ClinicRatingBar(),
         const SizedBox(
           height: 20,
         ),
