@@ -33,11 +33,16 @@ class _HomeViewState extends ConsumerState<HomeView> {
       ref.read(homePostsProvider.notifier).getHomePosts();
     });
   }
-
+@override
+void dispose() {
+   _scrollController.dispose();
+    super.dispose();
+}
   @override
   Widget build(BuildContext context) {
     final userModel = ref.read(currentUserProfileProvider);
-
+    
+ print('mosayed');
     return Container(
         padding: const EdgeInsets.only(top: 15),
         child: Scaffold(

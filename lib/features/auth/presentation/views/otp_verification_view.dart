@@ -10,7 +10,7 @@ import '../../../doctors/presentation/views/information_register_screen.dart';
 import '../../auth.dart';
 
 class OTPVerificationView extends HookConsumerWidget {
-  const OTPVerificationView({
+   OTPVerificationView({
     super.key,
     required this.receivedID,
     required this.phone,
@@ -18,10 +18,11 @@ class OTPVerificationView extends HookConsumerWidget {
 
   final String receivedID;
   final String phone;
+final otpCodeController = TextEditingController();
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final otpCodeController = useTextEditingController();
+    
     ref.listen(authProvider, (_, state) {
       state.whenOrNull(
         codeVerified: (
@@ -95,6 +96,7 @@ class OTPVerificationView extends HookConsumerWidget {
                           otpCodeController.text,
                           receivedID,
                         );
+                        
                   },
                   child: Text(
                     S.of(context).otp_confirmCodeButton,
@@ -127,4 +129,10 @@ class OTPVerificationView extends HookConsumerWidget {
       ),
     );
   }
+
+  @override
+void dispose() {
+   
+    otpCodeController.dispose();
+}
 }
