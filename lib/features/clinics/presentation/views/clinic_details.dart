@@ -12,6 +12,7 @@ import 'package:clinigram_app/features/doctors/presentation/views/information_re
 import 'package:clinigram_app/features/doctors/providers/doctors_provider.dart';
 import 'package:clinigram_app/features/doctors/providers/register_clinic_provider.dart';
 import 'package:clinigram_app/features/main/main.dart';
+import 'package:clinigram_app/features/profile/data/models/rating_model.dart';
 import 'package:clinigram_app/features/profile/data/repositries/profile_repo.dart';
 import 'package:clinigram_app/features/profile/profile.dart';
 import 'package:clinigram_app/features/translation/provider/app_language_provider.dart';
@@ -47,11 +48,15 @@ class _ClinicDetailsState extends ConsumerState<ClinicDetails> {
     _scrollController.dispose();
     super.dispose();
   }
-String a='';
+  
+
   @override
   Widget build(BuildContext context) {
     final clinicModel = ref.watch(clinicDetailsViewModelProvider);
-
+    String a=clinicModel.getLocalizedFullName(ref);
+    clinicModel.ratings;
+    double b=0;
+   
     List<String> mainSpec = [], subSpec = [];
     for (var element in clinicModel.specialists) {
       mainSpec.add(element.nameAr);
@@ -68,7 +73,7 @@ String a='';
           height: 10,
         ),
         const ClinicCommandsBar(),
-        const ClinicRatingBar(),
+         const ClinicRatingBar(),
         const SizedBox(
           height: 20,
         ),
@@ -312,13 +317,10 @@ String a='';
   String getClinicTypeString(ClinicJob? clinicJob) {
     switch (clinicJob) {
       case ClinicJob.dentist:
-      a=S.of(context).ClinicJobView_Dentist;
         return S.of(context).ClinicJobView_Dentist;
       case ClinicJob.beauty:
-      a=S.of(context).ClinicJobView_Cosmetic_Surgeon;
         return S.of(context).ClinicJobView_Cosmetic_Surgeon;
       case ClinicJob.dentistAndBeauty:
-      a=S.of(context).ClinicJobView_Cosmetic_Surgeon_and_Dentist;
         return S.of(context).ClinicJobView_Cosmetic_Surgeon_and_Dentist;
       default:
         return '';
