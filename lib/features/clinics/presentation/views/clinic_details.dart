@@ -14,7 +14,9 @@ import 'package:clinigram_app/features/doctors/providers/register_clinic_provide
 import 'package:clinigram_app/features/main/main.dart';
 import 'package:clinigram_app/features/profile/data/models/rating_model.dart';
 import 'package:clinigram_app/features/profile/data/repositries/profile_repo.dart';
+import 'package:clinigram_app/features/profile/presentation/widgets/doctor_card.dart';
 import 'package:clinigram_app/features/profile/profile.dart';
+import 'package:clinigram_app/features/profile/providers/rate_provider.dart';
 import 'package:clinigram_app/features/translation/provider/app_language_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:clinigram_app/features/translation/data/generated/l10n.dart';
@@ -37,6 +39,19 @@ class _ClinicDetailsState extends ConsumerState<ClinicDetails> {
   late final _scrollController = ScrollController();
 
   final horizontalPadding = 20.0;
+  double calculateAverageRate(List<RatingModel> ratings) {
+    if (ratings.isEmpty) {
+      return 0.0;
+    }
+
+    double totalRating = 0.0;
+
+    for (var rating in ratings) {
+      totalRating += rating.rating;
+    }
+
+    return totalRating / ratings.length;
+  }
 
   @override
   void initState() {
@@ -48,7 +63,15 @@ class _ClinicDetailsState extends ConsumerState<ClinicDetails> {
     _scrollController.dispose();
     super.dispose();
   }
-  
+  bool isRated(String userID, List<RatingModel> state) {
+    RatingModel rate;
+    for (rate in state) {
+      if (rate.userId == userID) {
+        return true;
+      }
+    }
+    return false;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -56,7 +79,7 @@ class _ClinicDetailsState extends ConsumerState<ClinicDetails> {
     String a=clinicModel.getLocalizedFullName(ref);
     clinicModel.ratings;
     double b=0;
-   
+   final String userId;
     List<String> mainSpec = [], subSpec = [];
     for (var element in clinicModel.specialists) {
       mainSpec.add(element.nameAr);
@@ -64,7 +87,7 @@ class _ClinicDetailsState extends ConsumerState<ClinicDetails> {
         subSpec.add(element.nameAr);
       }
     }
-
+final rateProvider = ref.watch(rateProviderProvider(clinicModel.id));
     return Scaffold(
         body: ListView(
       children: [
@@ -73,7 +96,88 @@ class _ClinicDetailsState extends ConsumerState<ClinicDetails> {
           height: 10,
         ),
         const ClinicCommandsBar(),
-         const ClinicRatingBar(),
+       Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    RatingBar.builder(
+                      initialRating: rateProvider.isNotEmpty
+                          ? calculateAverageRate(rateProvider)
+                          : 0,
+                      itemSize: 20,
+                      minRating: 1,
+                      direction: Axis.horizontal,
+                      allowHalfRating: true,
+                      itemCount: 5,
+                      itemPadding: const EdgeInsets.symmetric(horizontal: 4.0),
+                      itemBuilder: (context, _) => const Icon(
+                        Icons.star,
+                        color: Colors.amber,
+                      ),
+                      onRatingUpdate: (rating) {
+                        // The onRatingUpdate callback is not used when ignoreGestures is true.
+                      },
+                      ignoreGestures: true, // Disable user interaction
+                    ),
+                    const SizedBox(width: 10),
+                    Text(
+                        '(${rateProvider.isNotEmpty ? rateProvider.length : 0})'),
+                  ],
+                ),
+        // const ClinicRatingBar(),
+        
+        if (clinicModel.id.isEmpty) ...[
+            const Text(
+              "لا يوجد اتفاقيات",
+              style: TextStyle(color: Colors.black),
+            ),
+          ],
+          const SizedBox(
+            height: 20,
+          ),
+
+          if (rateProvider.isNotEmpty) ...[
+            RatingsAndCommentsWidget(
+              userId: clinicModel.id,
+              IsmyProfile: clinicModel.certificationsVerified,
+            ),
+          ],
+          if (rateProvider.isEmpty) ...[
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    S.of(context).AddRate_ratings,
+                    style: const TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xff113c67),
+                    ),
+                  ),
+                  if (!isRated(clinicModel.id, rateProvider) ) ...[
+                    GestureDetector(
+                      onTap: () async {
+                        showRatingDialog(context, clinicModel.id);
+                      },
+                      child: Center(
+                          child: Text(
+                        S.of(context).AddRate_add_rate,
+                        style: const TextStyle(color: Colors.blue),
+                      )),
+                    ),
+                  ]
+                ],
+              ),
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            const Text(
+              "لا يوجد تقيمات",
+              style: TextStyle(color: Colors.black),
+            ),
+          ],
         const SizedBox(
           height: 20,
         ),
