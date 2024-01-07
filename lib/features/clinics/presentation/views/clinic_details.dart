@@ -125,7 +125,48 @@ final rateProvider = ref.watch(rateProviderProvider(clinicModel.id));
                 ),
         // const ClinicRatingBar(),
         
-        if (clinicModel.id.isEmpty) ...[
+        
+        const SizedBox(
+          height: 20,
+        ),
+        ...editMyClinicButtonForOwnersOnly(clinicModel),
+        Padding(
+          padding:
+              EdgeInsets.symmetric(horizontal: horizontalPadding, vertical: 0),
+          child: Text(
+            clinicModel.getLocalizedFullName(ref),
+            style: const TextStyle(
+              fontSize: 20,
+              color: secondryColor,
+            ),
+          ),
+        ),
+        if (clinicModel.clinicJob != null) ...[
+          const SizedBox(
+            height: 5,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(
+                horizontal: horizontalPadding, vertical: 0),
+            child: Text(
+              getClinicTypeString(clinicModel.clinicJob),
+              style: const TextStyle(
+                  color: Colors.black,
+                  fontSize: 12,
+                  fontStyle: FontStyle.italic),
+            ),
+          ),
+        ],
+        const SizedBox(
+          height: 20,
+        ),
+        Padding(
+          padding: EdgeInsets.symmetric(horizontal: horizontalPadding),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              ...clinicPageBody(clinicModel),
+              if (clinicModel.id.isEmpty) ...[
             const Text(
               "لا يوجد اتفاقيات",
               style: TextStyle(color: Colors.black),
@@ -178,46 +219,6 @@ final rateProvider = ref.watch(rateProviderProvider(clinicModel.id));
               style: TextStyle(color: Colors.black),
             ),
           ],
-        const SizedBox(
-          height: 20,
-        ),
-        ...editMyClinicButtonForOwnersOnly(clinicModel),
-        Padding(
-          padding:
-              EdgeInsets.symmetric(horizontal: horizontalPadding, vertical: 0),
-          child: Text(
-            clinicModel.getLocalizedFullName(ref),
-            style: const TextStyle(
-              fontSize: 20,
-              color: secondryColor,
-            ),
-          ),
-        ),
-        if (clinicModel.clinicJob != null) ...[
-          const SizedBox(
-            height: 5,
-          ),
-          Padding(
-            padding: EdgeInsets.symmetric(
-                horizontal: horizontalPadding, vertical: 0),
-            child: Text(
-              getClinicTypeString(clinicModel.clinicJob),
-              style: const TextStyle(
-                  color: Colors.black,
-                  fontSize: 12,
-                  fontStyle: FontStyle.italic),
-            ),
-          ),
-        ],
-        const SizedBox(
-          height: 20,
-        ),
-        Padding(
-          padding: EdgeInsets.symmetric(horizontal: horizontalPadding),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              ...clinicPageBody(clinicModel),
             ],
           ),
         )
@@ -504,6 +505,19 @@ final rateProvider = ref.watch(rateProviderProvider(clinicModel.id));
 
   List<Widget> editMyClinicButtonForOwnersOnly(ClinicModel clinicModel) {
     final user = ref.watch(currentUserProfileProvider);
+   // final clinicModel = ref.watch(clinicDetailsViewModelProvider);
+    String a=clinicModel.getLocalizedFullName(ref);
+    clinicModel.ratings;
+    double b=0;
+   final String userId;
+    List<String> mainSpec = [], subSpec = [];
+    for (var element in clinicModel.specialists) {
+      mainSpec.add(element.nameAr);
+      for (var element in element.subCategories) {
+        subSpec.add(element.nameAr);
+      }
+    }
+final rateProvider = ref.watch(rateProviderProvider(clinicModel.id));
 
     if (clinicModel.ownerIds.contains(user.id) == false) {
       return [const SizedBox.shrink()];
@@ -539,6 +553,7 @@ final rateProvider = ref.watch(rateProviderProvider(clinicModel.id));
       const SizedBox(
         height: 20,
       ),
+      
     ];
   }
 }
